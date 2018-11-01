@@ -1,0 +1,41 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.image{
+	width: 600px;
+	height: 400px;
+	position: relative;
+	cursor: pointer;
+	top: 20%;
+	left: 20%;
+}
+.image:hover .hover{
+	width: 600px;
+}
+.image img{
+	display: block;
+	height: 400px;
+	width: 600px;
+}
+.hover{
+	width: 0;
+	height: 400px;
+	background: rgba(128, 128, 128, .7);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: .9s;
+}
+.hover h1{
+	color: #f2f2f2;
+	font-family: arial;
+	font-weight: 400;
+	font-size: 50px;
+	border: 5px double #f2f2f2;
+	padding: 10px 30px;
+}
